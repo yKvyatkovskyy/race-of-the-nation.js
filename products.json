@@ -1,0 +1,36 @@
+[
+    {
+        "id": "1",
+        "title": "Sports t-shirt RACE NATION",
+        "image": "img/products/sports-t-shirt.jpg",
+        "additionalImages": [
+            "https://placekitten.com/200/139",
+            "https://placekitten.com/200/139?2"
+        ],
+        "description": "Addidas",
+        "price": 999
+    },
+    {
+        "id": "2",
+        "title": "Training t-shirt RACE NATION",
+        "image": "img/products/training-t-shirt.png",
+        "additionalImages": [
+            "https://placekitten.com/200/139",
+            "https://placekitten.com/200/139?2"
+        ],
+        "description": "Reebok",
+        "price": 1499
+    },
+    {
+        "id": "3",
+        "title": "Sweatshirt RACE NATION",
+        "image": "img/products/sweatshirt.jpg",
+        "additionalImages": [
+            "https://placekitten.com/201/139",
+            "https://placekitten.com/201/139?2"
+        ],
+        "description": "Under Armour (унісекс)",
+        "price": 2499
+    },
+    
+]
