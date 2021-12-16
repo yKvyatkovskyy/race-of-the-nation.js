@@ -1,0 +1,247 @@
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@400;700&family=Comfortaa&display=swap');
+
+:root {
+    --main-color: black;
+    --accent-color: white;
+    font-family: 'Comfortaa', cursive;
+    scroll-behavior: smooth;
+}
+
+body {
+    max-width: 999;
+    margin: auto;
+}
+
+.header-nav .logo {
+    font-family: 'Balsamiq Sans', cursive;
+    font-size: 3.5rem;
+    text-align: left;
+}
+
+.header-nav .menu-items {
+    justify-content: space-around;
+    flex: 1;
+    display: none;
+}
+
+.header-nav .menu-items a {
+    display: block;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: var(--main-color);
+    padding: 5px;
+    border: 1px solid transparent;
+}
+
+.header-nav .menu-items a:hover {
+    border: 1px solid var(--main-color);
+} 
+
+/*Burger menu*/
+.burger-icon {
+    font-size: 2rem;
+}
+
+.burger-icon:hover {
+    cursor: pointer;
+}
+
+#burger-checkbox {
+    display: none;
+}
+
+.header-nav input:checked ~ .menu-items {
+    display: block;
+}
+
+@media (min-width: 825px) {
+
+    .burger-icon {
+        display: none;
+    }
+
+    .header-nav {
+        display: flex;
+        align-items: center;
+    }
+
+    #burger-checkbox ~ .menu-items {
+        display: flex;
+    }
+}
+
+.header-banner {
+    background-image: url(../img/race-nation2021.svg);
+    background-position: center;
+    background-size: cover;
+    min-height: 600px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.header-banner h1 {
+    font-size: 3.5rem;
+    color: var(--accent-color);
+}
+
+.product-list img {
+    width: 100%;
+}
+
+@media (min-width: 500px) {
+    .product-list {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 5px;
+    }
+}
+
+.product-card img {
+    width: 100%;
+}
+
+@media (min-width: 500px) {
+    .list-of-programs {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 5px;
+    }
+}
+
+@media (min-width: 660px) {
+    .list-of-programs {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media (min-width: 999px) {
+    .list-of-programs {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+/*Controls*/
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+}
+
+Add a background color when the inputs get focus
+input[type=text]:focus, input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+}
+
+/* Set a style for all buttons */
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    opacity: 0.9;
+}
+
+button:hover {
+    opacity:1;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+    padding: 14px 20px;
+    background-color: #f44336;
+}
+
+/* Float cancel and signup buttons and add an equal width */
+.cancelbtn, .signupbtn {
+  float: left;
+  width: 50%;
+}
+
+/* Add padding to container elements */
+.container1 {
+    padding: 16px;
+}
+
+/* The Modal (background) */
+.modal1 {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: #474e5d;
+    padding-top: 50px;
+}
+
+/* Modal Content/Box */
+.modal-content1 {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+/* Style the horizontal ruler */
+hr {
+    border: 1px solid black;
+    margin-bottom: 25px;
+}
+ 
+/* The Close Button (x) */
+.close {
+    position: absolute;
+    right: 35px;
+    top: 15px;
+    font-size: 40px;
+    font-weight: bold;
+    color: #f1f1f1;
+}
+
+.close:hover,
+.close:focus {
+    color: #f44336;
+    cursor: pointer;
+}
+
+/* Clear floats */
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 300px) {
+    .cancelbtn, .signupbtn {
+       width: 100%;
+    }
+}
+
+.button1 {
+    padding: 0.35em 1.2em;
+    border: 0.1em solid black;
+    margin: 0 0.3em 0.3em 0;
+    border-radius: 0.12em;
+    color: black;
+    text-align: center;
+    transition: all 0.7s;
+    background-color: transparent;
+}
+
+.button1:hover {
+    color: white;
+    background-color: black;
+    cursor: pointer;
+}
