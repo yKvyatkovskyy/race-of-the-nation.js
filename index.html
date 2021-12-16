@@ -7,10 +7,14 @@
     <link rel="stylesheet" href="css/libs/bootstrap-sketchy.min.css">
     <link rel="stylesheet" href="css/index.css">
     <link rel="shortuct icon" href="img/logo.svg">
+    
 </head>
 <body>
     <header>
         <nav class="header-nav">
+            <!-- <a href="https://ykvyatkovskyy.github.io/race-of-the-nation.js/" class="custom-logo-link" rel="home">
+                <img width="50" height="50" src="img/logo.svg" class="custom-logo" alt="Race Nation">
+            </a> -->
             <div class="logo"><img src="img/logo.svg" width="50" height="50" alt="Logo">Race Nation</div>
             <label class="burger-icon" for="burger-checkbox">☰</label>
             <input type="checkbox" id="burger-checkbox">
@@ -33,7 +37,54 @@
         </nav>
         <div class="header-banner">
             <h1><b>Крізь лінь, крізь страх</b></h1>
-            <button class="button">СТАТИ УЧАСНИКОМ</button>
+            <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Стати учасником</button>
+              <div id="id01" class="modal1">
+                <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">×</span>
+                <form class="modal-content1" action="/action_page.php">
+                  <div class="container1">
+                    <h1 style="color: black;">
+                      Реєстрація
+                    </h1>
+                    <p>
+                      Будь ласка, заповніть цю форму, щоб створити обліковий запис.
+                    </p>
+                    <hr>
+                    <label for="email">
+                      <b>
+                        E-mail
+                      </b>
+                    </label>
+                    <input type="text" placeholder="Введіть E-mail" name="email" required>
+                    <label for="psw">
+                      <b>
+                        Пароль
+                      </b>
+                    </label>
+                    <input type="password" placeholder="Введіть пароль" name="psw" required>
+                    <label for="psw-repeat">
+                      <b>
+                        Повторіть пароль
+                      </b>
+                    </label>
+                    <input type="password" placeholder="Повторіть пароль" name="psw-repeat" required>
+                    <label>
+                      <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px">
+                      &nbsp; &nbsp; Пам'ятай мене
+                    </label>
+                    <p>
+                      Створюючи обліковий запис, ви погоджуєтеся з нашими 
+                        <a href="#" style="color:dodgerblue">
+                          Умовами та конфіденційністю
+                        </a>
+                          .
+                    </p>
+                    <div class="clearfix">
+                      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Скасувати</button>
+                      <button type="submit" class="signupbtn">Зареєструватися</button>
+                    </div>
+                  </div>
+                </form>
+              </div>
         </div>
     </header>
       <main>
@@ -64,7 +115,7 @@
                     </p>
                 </p>
         </section>
-        <hr align="justify" color="black"/>
+        <hr>
         <section>
             <center>
             <h2 id="programs">НАШІ ПРОГРАМИ</h2>
@@ -90,7 +141,7 @@
             </div>
             </center>
         </section>
-        <hr align="justify" color="black"/>
+        <hr>
         <main class="container">
             <center>
             <h2 id="events"><b>МАЙБУТНІ ПОДІЇ</b></h2>
@@ -126,7 +177,7 @@
             </div>
             </center>
         </main>
-        <hr align="justify" color="black"/>
+        <hr>
         <center>
             <h2 id="winners"><b>Наші переможці</b></h2>
             <p>Вчіться у найкращих, використовуй власні сили, досвід та навчаючись у найсильніших.<br>
@@ -167,7 +218,7 @@
             </div>
         </center>
         <br>
-        <hr align="justify" color="black"/>
+        <hr>
         <center>
             <main class="container">
                 <h2><b>НАШІ РЕЗУЛЬТАТИ</b></h2>
@@ -204,7 +255,7 @@
             </main>
         </center>    
         <br>
-        <hr align="justify" color="black"/>
+        <hr>
         <center>
             <h2><b>ГАЛЕРЕЯ</b></h2>
             <div id="carouselProducts1" class="carousel slide" data-bs-ride="carousel">
@@ -248,7 +299,7 @@
             </div>
         </center>
         <br>
-        <hr align="justify" color="black"/>
+        <hr>
         <center>
           <section>
             <h2 id="products"><b>МАГАЗИН</b></h2>
@@ -277,7 +328,7 @@
             </figure> -->
         </center>
         <br>
-        <hr align="justify" color="black"/>
+        <hr>
         <center>
           <h2 id="partners"><b>Партнери і спонсори</b></h2>
             <img src="img/nike.jpg" alt="Nike">
@@ -294,12 +345,12 @@
           <button class="button1">ЗВ'ЯЖІТЬСЯ З НАМИ</button>
         </center>
         <br>
-        <hr align="justify" color="black"/>
+        <hr>
         <center>
             <h2 id="clubs"><b>НАШІ КЛУБИ</b></h2>
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2540.421955033742!2d30.505510515154718!3d50.45186679514471!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4ce5e9958f459%3A0x6e443959fa36004b!2z0LLRg9C70LjRhtGPINCe0LvQtdGB0Y8g0JPQvtC90YfQsNGA0LAsIDIyLCDQmtC40ZfQsiwgMDIwMDA!5e0!3m2!1suk!2sua!4v1635614052465!5m2!1suk!2sua" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
         </center>
-        <hr align="justify" color="black"/>
+        <hr>
         <div class="container">
           <div class="row">
             <div class="col">
@@ -342,7 +393,7 @@
             </div>
           </div>
         </div>
-        <hr align="justify" color="black"/>
+        <hr>
         <div class="container">
           <div class="row">
             <div class="col">
@@ -375,7 +426,7 @@
             </div>
           </div>
         </div>
-        <hr align="justify" color="black"/>
+        <hr>
       </main>
     <footer>
       <div align="right">
@@ -770,5 +821,6 @@
     <script src="js/cart.js"></script>
     <script src="js/product-list.js"></script> 
     <script src="js/index.js"></script>
+    <script src="js/form.js"></script>
 </body>
 </html>
